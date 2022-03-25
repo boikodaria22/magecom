@@ -1,0 +1,160 @@
+.hero-container 
+  padding 50px 0 0 0
+  height 100vh
+  position relative
+  // z-index 5
+
+#hero-title 
+  font-family Darker Grotesque
+  font-style normal
+  font-weight bold
+  font-size 180px
+  line-height 100%
+  overflow hidden
+  height 210px
+
+
+.hero-second-title 
+  font-family Darker Grotesque
+  font-style normal
+  font-weight 500
+  font-size 8rem
+  line-height 65%
+  overflow hidden
+  height 120px
+
+.after-title-hero-container
+  position absolute
+  bottom -5vh
+
+
+.quote 
+  text-align left
+  width 35%
+  font-family Darker Grotesque
+  font-style normal
+  font-weight 500
+  font-size 30px
+  line-height 110%
+  color #1B1B1E
+
+
+#get-quote, #get-quote2 
+  color #fff
+  font-style normal
+  font-weight 800
+  font-size 20px
+  text-transform uppercase
+  visibility hidden
+
+
+.sns 
+  width 250px
+  height 200px
+  display flex
+  margin-top 138px
+  align-items center
+  justify-content center
+  font-family Darker Grotesque
+  font-style normal
+  font-weight 800
+  font-size 20px
+  line-height 27px
+  text-transform uppercase
+  color #1B1B1E
+
+  // &:hover 
+  //   cursor: pointer
+  // 
+
+
+/////////////////
+/* JELLY STYLE */
+/////////////////
+
+
+.jelly-container, .jelly-container2 
+  position absolute
+  display inline-block
+  left 50%
+  margin-left -200px
+  margin-top 40px
+
+.jelly-container2
+  position sticky
+  top 0
+
+
+.jelly-container, .jelly-container2, .jelly-canvas, .jelly-canvas2  
+  // position absolute
+  width 400px
+  height 400px
+
+  // &:hover 
+  //   cursor: url('../assets/cursor-white.svg'), auto;
+     
+  
+
+
+/* It's important to position the `.centroid-container` in the top-left corner
+   This way the `.centroid-text` will be positioned in the center (with JavaScript) */
+.centroid-container, .centroid-container2 
+  position absolute
+  left 0
+  top 0
+  transform translate(-50%, -50%)
+  pointer-events none
+
+///////////////////
+/* KNOCKOUT TEXT */
+///////////////////
+
+.hero-container .backdrop {
+	// width: 600px; 
+  // height: 300px;
+	position: relative;
+	background-size: 100%;
+	// margin: 40px auto;
+}
+
+.hero-container .water.backdrop {
+  background: url("../assets/painting.jpg") repeat;
+  animation moving-background 4s linear infinite
+}
+.hero-container .water.overlay {
+	background-color: #e5e5e5;
+}
+.hero-container .water.text {
+	font-size: 11rem;
+}
+
+.hero-container .text {
+	color: black;
+	background-color: white;
+	mix-blend-mode:screen; 
+	width: 100%; 
+  // height: 100%;
+	font-weight: bolder;
+	// text-align: center;
+	// line-height: 300px;
+}
+
+.hero-container .overlay {
+	width: 100%; 
+  height: 100%;
+	position: absolute;
+	top: 0;
+	mix-blend-mode: multiply;
+}
+
+/* background image animation */
+@-webkit-keyframes moving-background {
+  0% {background-position: left center;}
+  100% {background-position: right center;}
+}
+
+@keyframes moving-background {
+  0% {background-position: left center;}
+  100% {background-position: right center;}
+}
+

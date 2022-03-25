@@ -1,0 +1,168 @@
+#case
+	font-family Darker Grotesque
+
+	.breadcrumbs-container
+		margin-top 100px
+
+		.text
+			padding-right 10px
+			display inline-block
+
+			&:hover
+				opacity 0.7
+				cursor pointer
+		
+		.text:not(:nth-of-type(1)):before  
+			content "/" 
+			padding-right 10px
+
+	//cese info
+	.case-info 
+		margin-top 20px
+
+		.general-info-row
+			margin-top 70px
+
+	//hero image
+	.hero-image-container
+		margin-top 50px
+
+		.hero-image-wrapper
+			width 100%
+			min-height 100%
+			transform rotateZ(10deg)
+			overflow hidden
+			opacity 0
+
+			&-anim
+				opacity 1
+				transform rotateZ(0)
+				transition 1s
+
+		.hero-image
+			// background-image url("../assets/crew.webp")
+			width 100%
+			min-height 500px
+			background-size contain
+			background-repeat no-repeat
+			background-position center
+			scale 1.5
+
+			&-anim
+				scale 1
+				transition 1s
+
+	//sections
+	.about-client, .project-description, .solutions
+		margin-top 50px
+
+		.text
+			margin-top 20px
+			white-space pre-wrap
+
+		.fourth-title
+			margin-bottom 20px
+
+		.stats
+			&-list
+				list-style none
+				padding-left 0
+				white-space pre-wrap
+		
+			.small-text
+				margin-bottom 10px
+
+		.footnote
+			background-color rgba(130, 130, 130, .1)
+			padding 30px
+
+			.small-text 
+				font-weight 600
+				margin-top 10px
+
+	//description
+	.project-description
+		margin-top 90px
+
+		.first-title
+			font-size 48px
+
+		.line 
+			margin 20px 0 50px 0
+
+	.picture
+		&-container
+			margin-top 50px
+
+			.small-text 
+				font-weight 600
+				margin-top 20px
+
+		&-wrapper
+			background-repeat no-repeat
+			// height 100%
+			width 10%
+			direction rtl
+			float right
+			opacity 0
+			overflow hidden
+
+			&-anim
+				width 100%
+				opacity 1
+				transition 1s
+
+		&-image
+			background-repeat no-repeat
+			height 300px
+			width 100%
+			// direction rtl
+			// float right
+			transform rotateZ(-10deg)
+			scale 1.5
+
+			&-anim
+				scale 1.15
+				transform rotateZ(0)
+				transition 1s
+
+	//testimonials
+	.testimonials
+		margin-top 50px
+		padding 50px
+		background-color rgb(224, 224, 224)
+
+		.third-title
+			margin-top 30px
+
+		.author
+			margin 30px 0 0 0
+
+	//result
+	.result-container
+		margin-top 50px
+		white-space pre-wrap
+
+		.third-title
+			margin 20px 0 15px 0
+
+		.tag-wrap 
+			background-color #1B1B1E
+			border-radius 100px
+			display inline-block
+			padding 3px 20px
+			margin 0 10px 10px 0
+		
+			.text
+				color #ffffff
+
+		.tag-wrap:last-of-type
+			margin-bottom 0 !important
+
+	//footer
+	.footer-container
+		margin-top 150px
+		
+
+
+

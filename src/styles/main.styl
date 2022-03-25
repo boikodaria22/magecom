@@ -1,0 +1,298 @@
+#main 
+  // height 100vh
+  font-family Darker Grotesque
+
+.title-text-wrapper 
+  overflow hidden
+
+.main-title
+  height 70px
+  position relative
+  bottom -55px
+
+  &-anim
+    transition 1.3s
+    bottom 0 !important
+
+// .main-title
+//   visibility hidden 
+
+.first-title 
+  font-style normal
+  font-weight bold
+  font-size 72px
+  line-height 80%
+
+
+.second-title
+  font-style normal
+  font-weight 800
+  font-size 32px
+  line-height 30px
+  // color #1B1B1E
+
+.third-title 
+  font-style normal
+  font-weight bold
+  font-size 24px
+  line-height 120%
+
+  &-alternate 
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 90%;
+
+.fourth-title
+  font-style normal
+  font-weight bold
+  font-size 18px
+  line-height 120%
+
+.text
+  font-style normal
+  font-weight 600
+  font-size 16px
+  line-height 150%
+  // color #1B1B1E
+
+.small-text
+  font-style normal
+  font-weight 800
+  font-size 14px
+  line-height 120%
+
+.number
+  font-family Darker Grotesque
+  color #EC5C2B
+  font-style normal
+  font-weight normal
+  font-size 110px
+  line-height 85.5%
+
+.button_image
+  display inline-block
+  margin-bottom 9px
+
+.button_text
+  display inline
+  font-style normal
+  font-weight 800
+  font-size 20px
+  line-height 27px
+  text-transform uppercase
+  color #1B1B1E
+
+.fade-in
+  visibility hidden
+
+  &-anim
+    visibility visible
+    animation fadeIn 1.3s linear
+
+// LINE ANIMATION
+
+.line 
+  width 0%
+  height 2px
+  background #000
+  visibility hidden
+
+.line-anim
+  -webkit-animation line_r_animation 1.3s
+  animation line_r_animation 1.3s
+  visibility visible
+  width 100%
+
+
+.pb
+  width 43px
+  height 43px
+  background-color #EC5C2B
+  
+
+  &:hover
+    animation featureButtonAnimIn 1s
+    width 100%
+    color #fff 
+
+  &:not(:hover)
+    animation featureButtonAnimOut 1s
+    // width 50px
+
+
+.hero-title-bottomTop-enter-active 
+  animation titleMovingBottomToTop 1s linear
+
+
+.hero-second-title-bottomTop-enter-active 
+  animation second-titleMovingBottomToTop 1s linear
+
+
+.fadeIn-enter-active 
+  animation fadeIn 1s linear
+
+//BUTTON ANIM
+
+:root {
+  --button-width: 300px;
+}
+
+.button 
+  position relative
+  border 0
+  width var(--button-width, 500px)
+  height 43px
+  line-height 40px
+  font-size 30px
+  background-color #E5E5E5
+  overflow hidden
+
+.button .button-text 
+  position absolute
+  top 0
+  width var(--button-width, 500px)
+  text-align left
+  margin-left 50px
+  margin-top 5px
+  font-style normal
+  font-weight 800
+  font-size 20px
+  line-height 27px
+  text-transform uppercase
+  color #1B1B1E
+
+.button .button-bar 
+  animation animateOut .3s linear
+  height 100%
+  overflow hidden
+  width 43px
+  background-color #EC5C2B
+  border-radius inherit
+  overflow hidden
+  position relative
+
+.button-bar:hover 
+  animation animate .3s linear
+  width 100%;
+  // cursor url('../assets/cursor-white.svg'), auto
+
+.button-bar:not(:hover) 
+  animation animateOut .3s linear 
+
+.button-bar-hover 
+  height 100%
+  overflow hidden
+  width 100%
+  background-color #EC5C2B
+  border-radius inherit
+  overflow hidden
+  position relative
+  animation animate .5s linear
+  // cursor url('../assets/cursor-white.svg'), auto 
+
+.button-bar-not-hover
+  animation animateOut .3s linear
+
+.button .button-bar-hover .button-text 
+  color #FFF
+
+.button .button-bar .button-text 
+  color #FFF
+
+////////////////////////////////////
+//          KEYFRAMES             //
+///////////////////////////////////
+
+
+@keyframes titleMovingBottomToTop 
+  0% 
+    bottom -150px
+  
+
+  100% 
+    bottom 0
+  
+
+
+@keyframes second-titleMovingBottomToTop 
+  0% 
+    bottom -150px
+  
+
+  100% 
+    bottom 0
+  
+
+
+@keyframes fadeIn 
+  0% 
+    opacity 0
+  
+
+  100% 
+    opacity 1
+
+@keyframes slideInTop
+  0% 
+    opacity 0
+    transform translate(0, 200px)
+
+  100% 
+    opacity 1
+    transform translate(0, 0)
+  
+//line keyframes
+
+@keyframes line_r_animation 
+  0%   
+    // left calc(2% + 50px) 
+    width 0px
+  // 100%
+  //   width 100px
+
+//features keyframes
+
+@keyframes featureButtonAnimIn 
+  0%
+    width 43px
+  100%
+    width 100%
+
+@keyframes featureButtonAnimOut 
+  0%
+    width 100%
+  100%
+    width 43px
+
+//button keyframes
+
+@-webkit-keyframes animate 
+  0% 
+    width 43px
+  
+  100% 
+    width 100%
+  
+
+@keyframes animate 
+  0% 
+    width 43px
+  
+  100% 
+    width 100%
+  
+@-webkit-keyframes animateOut 
+  0% 
+    width 100%
+  
+  100% 
+    width 43px
+
+@keyframes animateOut 
+  0% 
+    width 100%
+  
+  100% 
+    width 43px
+  

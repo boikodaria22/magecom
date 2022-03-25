@@ -1,0 +1,281 @@
+#careers
+	font-family Darker Grotesque
+
+	//title
+	.title-container
+		margin-top 150px
+
+		.button
+			width 70%
+			position absolute
+			bottom 0
+
+	//hero image
+	.hero-image-container
+		margin-top 140px
+
+		.hero-image-wrapper
+			width 100%
+			min-height 100%
+			transform rotateZ(20deg)
+			overflow hidden
+			opacity 0
+
+			&-anim
+				opacity 1
+				transform rotateZ(0)
+				transition 1s
+
+		.hero-image
+			background-image url("../assets/crew.webp")
+			width 100%
+			min-height 500px
+			background-size cover
+			scale 1.5
+
+			&-anim
+				scale 1
+				transition 1s
+
+	//who we are
+	.who-we-are-container
+		margin-top 100px
+
+		.text
+			margin-top 40px
+			
+
+		.third-title
+			margin-top 30px
+			white-space pre-wrap
+
+		.numbers-column
+			.numbers-cell
+				width 150px
+
+			.third-title 
+				margin inherit
+
+	//our events
+	.our-events-container
+		margin-top 130px
+		
+		.button
+			margin-top 70px
+
+		.text 
+			width 80%
+
+		.our-events-video
+			position relative
+			left 0
+			background-image url('../assets/our-events-video.png')
+			background-size cover
+			background-repeat no-repeat
+			height 100%
+			width 10%
+			opacity 0
+			direction rtl
+			float right
+
+			&-anim
+				width 100%
+				opacity 1
+				transition .3s
+
+		.play-button
+			position absolute
+			top 40%
+			left -30px
+			transform translate(-80px, 80px)
+			opacity 0
+			
+			// &:hover
+			// 	cursor url("../assets/cursor-white.svg"), auto
+
+			&-anim
+				transform translate(0, 0)
+				opacity 1
+				transition .3s
+
+	//what we offer
+	.what-we-offer
+		&-container
+			margin-top 130px
+
+			.line
+				margin-bottom 10px
+
+		&-image-wrapper
+			background-repeat no-repeat
+			height 100%
+			width 10%
+			direction rtl
+			float right
+			opacity 0
+			overflow hidden
+
+			&-anim
+				width 100%
+				opacity 1
+				transition 1s
+
+		&-image
+			background-repeat no-repeat
+			height 300px
+			width 100%
+			// direction rtl
+			// float right
+			transform rotateZ(-10deg)
+			scale 1.5
+
+			&-anim
+				scale 1
+				transform rotateZ(0)
+				transition 1s
+				
+
+		&-item-row
+			margin-top 65px
+
+	//vacancies
+	.vacancies
+		&-container
+			margin-top 150px
+
+			.title-text-wrapper
+				margin-bottom 60px
+
+			.vacancy-row
+				align-items center
+
+				.info
+					// padding 35px 0
+
+				.vacancy-back 
+					position relative
+					width 100%
+					height 130px
+					line-height 40px
+					font-size 30px
+					background-color #E5E5E5
+					overflow hidden
+				
+				.vacancy-back .text 
+					position absolute
+					top 35px
+					left 15px
+					width 100%
+					text-align left
+					font-style normal
+					font-weight 600
+					font-size 16px
+					line-height 150%
+					color #828282
+					overflow hidden
+
+				.vacancy-back .second-title 
+					position absolute
+					bottom 35px
+					left 15px
+					width 100%
+					text-align left
+					font-style normal
+					font-weight 800
+					font-size 32px
+					line-height 30px
+					color #1b1b1e
+					white-space nowrap
+
+				.vacancy-back img 
+					position absolute
+					top 40%
+					right 15px
+					overflow hidden
+					z-index 1000
+				
+				.vacancy-back .vacancy-back-bar 
+					transition .5s
+					height 100%
+					width 0%
+					overflow hidden
+					background-color #EC5C2B
+					border-radius inherit
+					overflow hidden
+					position relative
+				
+				.vacancy-back-bar-hover 
+					height 100%
+					overflow hidden
+					width 100% !important
+					background-color #EC5C2B
+					border-radius inherit
+					overflow hidden
+					position relative
+					// cursor url('../assets/cursor-white.svg'), auto 
+				
+				.vacancy-back-bar-not-hover
+					width 0%
+					direction ltr
+					float right
+					overflow hidden
+				
+				.vacancy-back .vacancy-back-bar-hover .text 
+					color #FFF
+				
+				.vacancy-back .vacancy-back-bar .text 
+					color #FFF
+
+				.vacancy-back .vacancy-back-bar-hover .second-title 
+					color #FFF
+					text-decoration underline
+				
+				.vacancy-back .vacancy-back-bar .second-title 
+					color #FFF
+					text-decoration underline
+	
+	//recruiters
+	.recruiters-container
+		margin-top 200px
+
+		.contacts
+			margin-top 60px
+
+			&-image-wrapper
+				background-repeat no-repeat
+				width 10%
+				opacity 0
+				overflow hidden
+
+				&-anim
+					width 100%
+					opacity 1
+					transition 1s
+
+			&-image
+				background-repeat no-repeat
+				height 350px
+				// width 100%
+				// direction rtl
+				// float left
+				transform rotateZ(-10deg)
+				scale 1.5
+
+				&-anim
+					scale 1
+					transform rotateZ(0)
+					transition 1s
+
+	//recruiters
+	.recruiters-container
+		.second-title, .line
+			margin-top 25px
+
+		.contact-title
+			margin-top 20px
+
+
+	//footer
+	.footer-container 
+		margin-top 130px
+
